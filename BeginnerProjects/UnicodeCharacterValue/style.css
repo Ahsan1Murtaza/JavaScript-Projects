@@ -1,0 +1,25 @@
+*{
+    padding: 0;margin: 0;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 2px solid gray;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
