@@ -1,0 +1,203 @@
+/* #091540 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-color: #091540;
+    --text-color: hsl(226, 11%, 37%);
+    --background-color: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    --component-background-color: white;
+    --switch-background: hsl(3, 77%, 44%);
+    --switch-color: #EBF2FC;
+    --toggle-background-color : hsl(0, 0%, 78%);
+}
+
+.page {
+    width: 1260px;
+    height: 1200px;
+    background: var(--background-color);
+    align-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    background: var(--background-color);
+}
+
+[data-theme="dark"] {
+    --heading-color: white;
+    --text-color: hsl(217, 61%, 90%);
+    --background-color: linear-gradient(180deg, #040918 0%, #091540 100%);
+    --component-background-color: hsl(225, 23%, 24%);
+    --switch-background: hsl(3, 86%, 64%);
+    --switch-color: #040918;
+    --toggle-background-color : hsl(226, 11%, 37%);
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: var(--component-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px hsl(0, 0%, 78%);
+}
+
+.options {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--background-color); */
+    color: var(--heading-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#toggle-theme{
+    border-radius: 10px;
+    background-color: var(--toggle-background-color);
+    padding: 10px;
+}
+#toggle-theme:hover{
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 15px;
+    outline: none;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 1px var(--heading-color);
+}
+#allbtn {
+    width: 40px;
+    height: 30px;
+    background: var(--switch-background);
+    color: var(--switch-color);
+}
+
+
+#activebtn {
+    width: 60px;
+    height: 30px;
+    background: var(--component-background-color);
+    color: var(--heading-color);
+}
+
+#inactivebtn {
+    width: 60px;
+    height: 30px;
+    background: var(--component-background-color);
+    color: var(--heading-color);
+}
+
+
+.extension-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
+
+
+.half{
+    width: 100%;
+    height: 50%;
+    background-color: var(--component-background-color);
+    display: flex;
+    justify-content: space-between;
+    border-radius: inherit;
+}
+.image{
+    width: 20%;
+    align-content: center;
+    background-color: var(--component-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+.image img{
+    width: 80%;
+    height: 80%;
+}
+.content{
+    width: 75%;
+    align-content: center;
+    /* padding: 10px; */
+}
+.content p:first-child{
+    color: var(--heading-color);
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.content p:last-child{
+    color: var(--text-color);
+
+}
+
+.half-bottom{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.remBtnDiv{
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
+}
+.remBtn{
+    width: 100%;
+    height: 100%;
+    background-color: var(--component-background-color);
+    border: 1px solid gray;
+    border-radius: inherit;
+    color: var(--heading-color);
+    outline: none;
+    cursor: pointer;
+}
+.slider {
+    width: 40px;
+    height: 20px;
+    /* background-color: blue; */
+    position: relative;
+    border-radius: 10px;
+}
+
+.checker {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: inherit;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}

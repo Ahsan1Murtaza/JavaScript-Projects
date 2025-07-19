@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>IP Adress tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="top">
+            <h1>IP Address Tracker</h1>
+            <div class="entry">
+                <input type="text" name="" id="ipBar" placeholder="Search for any IP address or domain">
+                <button id="ipButton"> > </button>
+            </div>
+        </div>
+        <div class="area">
+            <iframe id="mapFrame" width="100%" height="800" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </div>
+        
+        <div class="content" id="cont">
+            <div class="ipAdress box">
+                <p class="headings">IP ADDRESS</p>
+                <p id="ip" class="text"></p>
+            </div>
+            <div class="location box">
+                 <p class="headings">LOCATION</p>
+                <p id="loc" class="text"></p>
+            </div>
+            <div class="zipcode box">
+                <p class="headings">ZIP CODE</p>
+                <p id="zip" class="text"></p>
+            </div>
+            <div class="flag box">
+                <p class="headings">FLAG</p>
+                <img src="" alt="country image" id="flag">
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

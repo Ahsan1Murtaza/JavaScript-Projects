@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1280px;
+    height: 760px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: center; */
+}
+.top{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(187, 186, 186); 
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    color:  #333;
+}
+.textArea{
+    width: 700px;
+    height: 150px;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+
+}
+
+
+.spancolor{
+    color: rgb(187, 186, 186);
+}
+/* Specially for span dots used instead of space in UI only */
+.spanbackcolor{ 
+    background-color: rgb(187, 186, 186); 
+}
+.correctspancolor{
+    background-color: gray;
+}
+
+.correct{
+    color: gray;
+}
+.wrong{
+    /* Just empty add color by js to indicate the character is wrong but not at direct point since after user moving forward he can see wrong character thats why it initally empty later it will contain red color*/
+}
+.underline {
+    text-decoration: underline rgb(187, 186, 186);
+}
+
+
+.result1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+.result2{
+    /* margin-top: 40px; */
+    /* margin-bottom: 40px; */
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+
